@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Gajrani • Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav-container">
+      <div class="logo">
+        <span class="logo-mark">&lt;/&gt;</span>
+        <span class="logo-text">Harsh Gajrani</span>
+      </div>
+      <nav class="nav">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#certificates" class="nav-link">Certificates</a>
+      </nav>
+      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+        🌙
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-label">Hi, I'm</p>
+        <h1 class="hero-title">Harsh Gajrani</h1>
+        <h2 class="hero-subtitle">BTech CSE Student • Web Developer</h2>
+        <p class="hero-description">
+          1st semester CSE student who loves building things for the web.
+          I enjoy working with HTML, CSS, JavaScript, Python &amp; C++,
+          and I’m always up for learning fast and shipping new ideas.
+        </p>
+        <div class="hero-buttons">
+          <a href="#skills" class="btn primary">View Skills</a>
+          <a href="#contact" class="btn ghost">Contact Me</a>
+        </div>
+        <div class="hero-meta">
+          <span class="meta-item">Pro coder in progress 🚀</span>
+          <span class="meta-item">Fast learner ⚡</span>
+        </div>
+      </div>
+      <div class="hero-panel">
+        <div class="code-card">
+          <pre><code>// quick intro
+const name = "Harsh Gajrani";
+const role = "BTech CSE Student & Web Dev";
+
+const skills = ["HTML", "CSS", "JavaScript", "Python", "C++"];
+
+console.log("Let’s build something cool!");</code></pre>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container section-inner reveal">
+      <div class="section-header">
+        <p class="section-kicker">About</p>
+        <h2 class="section-title">Who am I?</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I’m a 1st semester BTech CSE student with a strong interest in
+            web development and programming. I enjoy building new things,
+            experimenting with ideas, and turning concepts into working code.
+          </p>
+          <p>
+            I work with <strong>HTML, CSS, JavaScript, Python, and C++</strong>,
+            and I love the feeling of solving problems and seeing my work run
+            in the browser. I learn concepts quickly and enjoy pushing myself
+            to improve every day.
+          </p>
+          <p>
+            My current focus is on building a strong foundation in web
+            development and programming so I can move towards
+            real-world projects, internships, and open-source contributions.
+          </p>
+        </div>
+        <div class="about-aside">
+          <div class="about-card">
+            <h3>Quick Details</h3>
+            <ul>
+              <li><span>Degree:</span> BTech in Computer Science & Engineering</li>
+              <li><span>Semester:</span> 1st</li>
+              <li><span>Interests:</span> Web Dev, Problem Solving, C++</li>
+              <li><span>Location:</span> India</li>
+            </ul>
+          </div>
+          <div class="about-card">
+            <h3>What I’m aiming for</h3>
+            <p>
+              • Build a solid portfolio of projects<br />
+              • Improve DSA & problem solving<br />
+              • Explore internships & real-world experience
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section alt">
+    <div class="container section-inner reveal">
+      <div class="section-header">
+        <p class="section-kicker">Skills</p>
+        <h2 class="section-title">Tools I work with</h2>
+        <p class="section-subtitle">
+          A growing stack of technologies I’m learning and using regularly.
+        </p>
+      </div>
+      <div class="skills-grid">
+        <div class="skills-group">
+          <h3>Core Web</h3>
+          <div class="tag-list">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Programming</h3>
+          <div class="tag-list">
+            <span class="tag">C++</span>
+            <span class="tag">Python (Basics)</span>
+          </div>
+        </div>
+        <div class="skills-group">
+          <h3>Currently Improving</h3>
+          <div class="tag-list">
+            <span class="tag">Responsive Design</span>
+            <span class="tag">Clean Code</span>
+            <span class="tag">Problem Solving</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container section-inner reveal">
+      <div class="section-header">
+        <p class="section-kicker">Projects</p>
+        <h2 class="section-title">What I’m working on</h2>
+        <p class="section-subtitle">
+          I’m at the start of my journey, so I’m currently focused on
+          learning and building small practice projects. More detailed
+          projects will be added here soon.
+        </p>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>Portfolio Website</h3>
+          <p>
+            This website itself — a personal portfolio built using
+            HTML, CSS, and JavaScript, designed to showcase my skills
+            and future projects.
+          </p>
+          <div class="project-meta">
+            <span class="badge">HTML</span>
+            <span class="badge">CSS</span>
+            <span class="badge">JavaScript</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Frontend Practice (Coming Soon)</h3>
+          <p>
+            A collection of small landing pages and UI components
+            to practice layouts, responsiveness, and clean design.
+          </p>
+          <div class="project-meta">
+            <span class="badge">Responsive Design</span>
+            <span class="badge">UI</span>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Python &amp; C++ Experiments (Coming Soon)</h3>
+          <p>
+            Console-based mini apps and problem-solving exercises
+            to improve logic building and understanding of core concepts.
+          </p>
+          <div class="project-meta">
+            <span class="badge">Python</span>
+            <span class="badge">C++</span>
+            <span class="badge">Problem Solving</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section alt">
+    <div class="container section-inner reveal">
+      <div class="section-header">
+        <p class="section-kicker">Contact</p>
+        <h2 class="section-title">Let’s connect</h2>
+        <p class="section-subtitle">
+          Whether it’s about projects, opportunities, or just tech talk,
+          feel free to reach out.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Reach me directly</h3>
+          <ul>
+            <li>
+              <span class="contact-label">Email:</span>
+              <a href="mailto:harshgajrani24@gmail.com">harshgajrani24@gmail.com</a>
+            </li>
+            <li>
+              <span class="contact-label">GitHub:</span>
+              <a href="https://github.com/HarshG2404" target="_blank" rel="noreferrer">
+                HarshG2404
+              </a>
+            </li>
+            <li>
+              <span class="contact-label">LinkedIn:</span>
+              <a href="https://www.linkedin.com/in/harsh-gajrani-656580380" target="_blank" rel="noreferrer">
+                harsh-gajrani-656580380
+              </a>
+            </li>
+          </ul>
+          <p class="contact-note">
+            I’m actively learning and open to guidance, collaborations, and beginner-friendly opportunities.
+          </p>
+        </div>
+
+        <div class="contact-form-card">
+          <h3>Say something</h3>
+          <form class="contact-form" onsubmit="return false;">
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
+            </div>
+            <button type="submit" class="btn primary" id="fake-submit">
+              Send 
+            </button>
+           
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section (Bottom) -->
+  <section id="certificates" class="section">
+    <div class="container section-inner reveal">
+
+      <div class="section-header">
+        <p class="section-kicker">Certifications</p>
+        <h2 class="section-title">My Certifications</h2>
+        <p class="section-subtitle">
+          Courses I have completed to improve my knowledge and skills.
+        </p>
+      </div>
+
+      <div class="cert-grid">
+
+        <!-- Certificate 1 -->
+        <div class="cert-card">
+          <h3>Cyber Security Workshop</h3>
+          <img src="Screenshot 2025-11-22 232856.png" class="cert-thumb" alt="Certificate 1">
+          <p class="cert-org">Skill India</p>
+          <p class="cert-desc">
+            Participated in a technical cyber security workshop at Lovely Professional University, gaining awareness of
+            system vulnerabilities, security threats, and preventive methods. The workshop was conducted by ANSH
+            InfoTech, Ludhiana.
+          </p>
+          <p class="cert-date">Completed: 21/11/2025</p>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="cert-card">
+          <h3>Effective Time Management</h3>
+          <img src="Screenshot 2025-11-22 232911.png" class="cert-thumb" alt="Certificate 1">
+          <p class="cert-org">TECH VEDA</p>
+          <p class="cert-desc">
+            Improved productivity skills by completing a 5-hour MOOC on effective time management, including a
+            comprehensive proctored exam. Learned practical techniques for prioritization, planning, and self-discipline
+            to support continuous growth and personal development.
+          </p>
+          <p class="cert-date">Completed:29/10/2025</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Harsh Gajrani. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/HarshG2404" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/harsh-gajrani-656580380" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:harshgajrani24@gmail.com">Email</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html> 
