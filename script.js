@@ -1,32 +1,3 @@
-// Theme toggle
-const themeToggle = document.getElementById("theme-toggle");
-
-function setTheme(mode) {
-  if (mode === "light") {
-    document.body.classList.add("light");
-    themeToggle.textContent = "☀️";
-  } else {
-    document.body.classList.remove("light");
-    themeToggle.textContent = "🌙";
-  }
-}
-
-function initTheme() {
-  const saved = localStorage.getItem("theme");
-  if (saved === "light" || saved === "dark") {
-    setTheme(saved);
-  } else {
-    setTheme("dark");
-  }
-}
-
-themeToggle.addEventListener("click", () => {
-  const isLight = document.body.classList.contains("light");
-  const newTheme = isLight ? "dark" : "light";
-  setTheme(newTheme);
-  localStorage.setItem("theme", newTheme);
-});
-
 // Smooth scroll for nav links
 document.querySelectorAll(".nav-link").forEach((link) => {
   link.addEventListener("click", (e) => {
@@ -38,7 +9,7 @@ document.querySelectorAll(".nav-link").forEach((link) => {
   });
 });
 
-// Simple reveal on scroll
+// Reveal on scroll
 const revealEls = document.querySelectorAll(".reveal");
 const observer = new IntersectionObserver(
   (entries) => {
@@ -64,9 +35,41 @@ if (yearSpan) {
 const fakeSubmit = document.getElementById("fake-submit");
 if (fakeSubmit) {
   fakeSubmit.addEventListener("click", () => {
-    alert("This is a demo form. Please email or message on LinkedIn to contact Harsh 😊");
+    alert(
+      "This is a demo form. Please email or message on LinkedIn to contact Harsh 😊"
+    );
   });
 }
 
-// Init
-initTheme();
+// ---------- Background painting slideshow ----------
+
+// we now use <body> as the background target
+const bgEl = document.body;
+
+const paintings = [
+  "bg1.jpg",
+  "bg2.jpg",
+  "bg3.jpg",
+  "bg4.jpg",
+  "bg5.jpg",
+  "bg6.jpg",
+  "bg7.jpg",
+  "bg8.jpg",
+  "bg9.jpg",
+  "bg10.jpg"
+];
+
+let bgIndex = 0;
+
+function updateBackground() {
+  if (!bgEl) return;
+
+  // dark gradient + painting
+  bgEl.style.backgroundImage =
+    `linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.75)), url("${paintings[bgIndex]}")`;
+
+  bgIndex = (bgIndex + 1) % paintings.length;
+}
+
+updateBackground();
+setInterval(updateBackground, 7000);

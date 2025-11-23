@@ -8,13 +8,15 @@
 
   <!-- Google Fonts -->
   <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Source+Serif+4:wght@400;500&family=Fira+Code:wght@400;500&display=swap"
     rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
+  <!-- Blurred paintings background layer -->
+
   <!-- Header / Navbar -->
   <header class="header">
     <div class="container nav-container">
@@ -27,12 +29,10 @@
         <a href="#about" class="nav-link">About</a>
         <a href="#skills" class="nav-link">Skills</a>
         <a href="#projects" class="nav-link">Projects</a>
+        <a href="#inspirations" class="nav-link">Inspiration</a>
         <a href="#contact" class="nav-link">Contact</a>
         <a href="#certificates" class="nav-link">Certificates</a>
       </nav>
-      <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
-        🌙
-      </button>
     </div>
   </header>
 
@@ -57,15 +57,14 @@
           <span class="meta-item">Fast learner ⚡</span>
         </div>
       </div>
+
       <div class="hero-panel">
-        <div class="code-card">
-          <pre><code>// quick intro
-const name = "Harsh Gajrani";
-const role = "BTech CSE Student & Web Dev";
-
-const skills = ["HTML", "CSS", "JavaScript", "Python", "C++"];
-
-console.log("Let’s build something cool!");</code></pre>
+        <div class="quote-card">
+          <p class="quote-label">Physics • Responsibility</p>
+          <p class="quote-text">
+            “I am become death, the destroyer of worlds.”
+          </p>
+          <p class="quote-author">-J. Robert Oppenheimer</p>
         </div>
       </div>
     </div>
@@ -213,6 +212,69 @@ console.log("Let’s build something cool!");</code></pre>
     </div>
   </section>
 
+  <!-- Inspirations Section -->
+  <section id="inspirations" class="section alt">
+    <div class="container section-inner reveal">
+      <div class="section-header">
+        <p class="section-kicker">Influence</p>
+        <h2 class="section-title">Literature & Science that shape me</h2>
+        <p class="section-subtitle">
+          A mix of writers and scientists whose ideas influence how I think about people, problems, and the universe.
+        </p>
+      </div>
+
+      <div class="insp-grid">
+        <article class="insp-card">
+          <h3>Richard P. Feynman</h3>
+          <p class="insp-tag">•Learning</p>
+          <p class="insp-quote">
+            "Study hard what interests you the most in the most undisciplined, irreverent and original manner possible."
+          </p>
+        </article>
+
+        <article class="insp-card">
+          <h3>Franz Kafka</h3>
+          <p class="insp-tag">Absurdity • Alienation</p>
+          <p class="insp-quote">
+            "A book must be the axe for the frozen sea within us."
+          </p>
+        </article>
+
+        <article class="insp-card">
+          <h3>Rabindranath Tagore</h3>
+          <p class="insp-tag">Poetry • Freedom</p>
+          <p class="insp-quote">
+            "Faith is the bird that feels the light and sings when the dawn is still dark."
+          </p>
+        </article>
+
+        <article class="insp-card">
+          <h3>Niels Bohr</h3>
+          <p class="insp-tag">Quantum theory</p>
+          <p class="insp-quote">
+            "Prediction is very difficult, especially about the future."
+          </p>
+        </article>
+
+        <article class="insp-card">
+          <h3>Fyodor Dostoevsky </h3>
+          <p class="insp-tag">•Literary impulse</p>
+          <p class="insp-quote">
+            "The mystery of human existence lies not in just staying alive, but in finding something to live for."
+          </p>
+        </article>
+
+        <article class="insp-card">
+          <h3>Albert Einstein</h3>
+          <p class="insp-tag">Creativity • Curiosity</p>
+          <p class="insp-quote">
+            "Imagination is more important than knowledge."
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="section alt">
     <div class="container section-inner reveal">
@@ -246,41 +308,18 @@ console.log("Let’s build something cool!");</code></pre>
               </a>
             </li>
           </ul>
+
           <p class="contact-note">
             I’m actively learning and open to guidance, collaborations, and beginner-friendly opportunities.
           </p>
-        </div>
-
-        <div class="contact-form-card">
-          <h3>Say something</h3>
-          <form class="contact-form" onsubmit="return false;">
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" type="text" placeholder="Your name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" type="email" placeholder="you@example.com" required />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" rows="4" placeholder="Your message..." required></textarea>
-            </div>
-            <button type="submit" class="btn primary" id="fake-submit">
-              Send 
-            </button>
-           
-            </p>
-          </form>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Certificates Section (Bottom) -->
+  <!-- Certificates Section -->
   <section id="certificates" class="section">
     <div class="container section-inner reveal">
-
       <div class="section-header">
         <p class="section-kicker">Certifications</p>
         <h2 class="section-title">My Certifications</h2>
@@ -290,11 +329,9 @@ console.log("Let’s build something cool!");</code></pre>
       </div>
 
       <div class="cert-grid">
-
-        <!-- Certificate 1 -->
         <div class="cert-card">
           <h3>Cyber Security Workshop</h3>
-          <img src="Screenshot 2025-11-22 232856.png" class="cert-thumb" alt="Certificate 1">
+          <img src="Screenshot 2025-11-22 232856.png" class="cert-thumb" alt="Cyber Security certificate">
           <p class="cert-org">Skill India</p>
           <p class="cert-desc">
             Participated in a technical cyber security workshop at Lovely Professional University, gaining awareness of
@@ -304,21 +341,18 @@ console.log("Let’s build something cool!");</code></pre>
           <p class="cert-date">Completed: 21/11/2025</p>
         </div>
 
-        <!-- Certificate 2 -->
         <div class="cert-card">
           <h3>Effective Time Management</h3>
-          <img src="Screenshot 2025-11-22 232911.png" class="cert-thumb" alt="Certificate 1">
+          <img src="Screenshot 2025-11-22 232911.png" class="cert-thumb" alt="Effective Time Management certificate">
           <p class="cert-org">TECH VEDA</p>
           <p class="cert-desc">
             Improved productivity skills by completing a 5-hour MOOC on effective time management, including a
             comprehensive proctored exam. Learned practical techniques for prioritization, planning, and self-discipline
             to support continuous growth and personal development.
           </p>
-          <p class="cert-date">Completed:29/10/2025</p>
+          <p class="cert-date">Completed: 29/10/2025</p>
         </div>
-
       </div>
-
     </div>
   </section>
 
@@ -330,6 +364,7 @@ console.log("Let’s build something cool!");</code></pre>
         <a href="https://github.com/HarshG2404" target="_blank" rel="noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/harsh-gajrani-656580380" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="mailto:harshgajrani24@gmail.com">Email</a>
+
       </div>
     </div>
   </footer>
@@ -337,4 +372,4 @@ console.log("Let’s build something cool!");</code></pre>
   <script src="script.js"></script>
 </body>
 
-</html> 
+</html>
